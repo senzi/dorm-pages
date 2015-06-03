@@ -8,25 +8,25 @@
 
 
   <!-- Add jQuery library -->
-  <script type="text/javascript" src="../box/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="box/jquery-1.10.1.min.js"></script>
 
   <!-- Add mousewheel plugin (this is optional) -->
-  <script type="text/javascript" src="../box/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="box/jquery.mousewheel-3.0.6.pack.js"></script>
 
   <!-- Add fancyBox main JS and CSS files -->
-  <script type="text/javascript" src="../box/jquery.fancybox.js?v=2.1.5"></script>
+  <script type="text/javascript" src="box/jquery.fancybox.js?v=2.1.5"></script>
   <link rel="stylesheet" type="text/css" href="box/jquery.fancybox.css?v=2.1.5" media="screen" />
 
   <!-- Add Button helper (this is optional) -->
-  <link rel="stylesheet" type="text/css" href="../box/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+  <link rel="stylesheet" type="text/css" href="box/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
   <script type="text/javascript" src="box/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
 
   <!-- Add Thumbnail helper (this is optional) -->
-  <link rel="stylesheet" type="text/css" href="../box/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <link rel="stylesheet" type="text/css" href="box/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
   <script type="text/javascript" src="box/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
   <!-- Add Media helper (this is optional) -->
-  <script type="text/javascript" src="../box/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+  <script type="text/javascript" src="box/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 <script type="text/javascript">
     $(document).ready(function() {
       /*
@@ -227,17 +227,33 @@
       <nav class="main-nav">
         <ul>
           <li><a href="#">首页</a></li>
-    			<li><a href="#">成员列表</a></li>
-    			<li><a class="fancybox" href="#inline1" title="深圳大学南区宿舍4-1213">关于宿舍</a></li>
+    			<li><a class="fancybox" href="#inline1" title="深圳大学南区宿舍4-1213">成员列表</a></li>
+    			<li><a class="fancybox" href="#inline2" title="深圳大学南区宿舍4-1213">关于宿舍</a></li>
         </ul>
       </nav>
 
-  <div id="inline1" style="width:400px;display: none;">
+	<div id="inline1" style="width:500px;display: none;">
+		<h3>宿舍初始人员</h3>
+		<ul class="initial members">
+			<li>队长辉神</li>
+			<li>潘健森</li>
+			<li>黄秀峰</li>
+			<li>刘百敏</li>
+		</ul>
+		<h3>宿舍拓展人员</h3>
+		<ul class="added members">
+			<li>队长水哥</li>
+			<li>林军涛</li>
+			<li>许建林</li>
+		</ul>
+	</div>
+	
+	<div id="inline2" style="width:400px;display: none;">
     <h3>关于宿舍</h3>
     <p>
       关于我们宿舍，并没有什么好说的
     </p>
-  </div>
+	</div>
 
 
       <section class="section introduce">

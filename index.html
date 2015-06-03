@@ -168,7 +168,20 @@
        */
 
       $("#fancybox-manual-a").click(function() {
-        $.fancybox.open('1_b.jpg');
+        $.fancybox.open([
+		{
+			href:'img/shuige1-s.jpg',
+			title:'Dota2领袖人物——队魂'
+			}
+			],{
+				helpers : {
+				thumbs : {
+				width: 75,
+				height: 50
+            }
+          }
+			}
+			);
       });
 
       $("#fancybox-manual-b").click(function() {
@@ -199,7 +212,22 @@
           }
         });
       });
-
+	  $("#fancybox-manual-d").click(function() {
+        $.fancybox.open([
+		{
+			href:'img/IMG_2332.JPG',
+			title:'Dota2领袖人物——队魂'
+			}
+			],{
+				helpers : {
+				thumbs : {
+				width: 75,
+				height: 50
+            }
+          }
+			}
+			);
+      });
 
     });
   </script>
@@ -235,14 +263,14 @@
 	<div id="inline1" style="width:500px;display: none;">
 		<h3>宿舍初始人员</h3>
 		<ul class="initial members">
-			<li>队长辉神</li>
+			<li><a id="fancybox-manual-d" href="javascript:;" title="Dota2领袖人物——队魂">队长辉神</a></li>
 			<li>潘健森</li>
 			<li>黄秀峰</li>
 			<li>刘百敏</li>
 		</ul>
 		<h3>宿舍拓展人员</h3>
 		<ul class="added members">
-			<li>队长水哥</li>
+			<li><a id="fancybox-manual-a" href="javascript:;">队长水哥</a></li>
 			<li>林军涛</li>
 			<li>许建林</li>
 		</ul>
